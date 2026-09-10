@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"D:/pyfluent/pyfluent_v241/Scripts/python.exe\" --version)",
+      "Bash(tasklist //FI \"IMAGENAME eq fluent.exe\")",
+      "Bash(tasklist //FI \"IMAGENAME eq SpaceClaim.exe\")",
+      "Bash(PYTHONIOENCODING=utf-8 \"D:/pyfluent/pyfluent_v241/Scripts/python.exe\" -u \"D:/pyfluent/run_uuv_cfd.py\" --model \"D:/pyfluent/uuv.x_t\" --velocities 2 4 --cores 6 --iterations 100 --workdir \"D:/pyfluent/agent_test_claude\")",
+      "Bash(grep -E \"\\\\.\\(png|xlsx|out|json|cas\\\\.h5|dat\\\\.h5|msh\\\\.h5\\)$\")"
+    ]
+  }
+}
